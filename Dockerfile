@@ -21,6 +21,7 @@ RUN /opt/venv/bin/pip install PyYAML
 
 # Copy files to the virtual machine
 COPY feed.py /usr/bin/feed.py
+COPY entrypoint.sh /entrypoint.sh
 
 # Reset DEBIAN_FRONTEND back to original
 ENV DEBIAN_FRONTEND=dialog
